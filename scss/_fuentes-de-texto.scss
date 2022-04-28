@@ -1,0 +1,59 @@
+
+$fontsiz-artcsect-secundario-menu:1.3rem;
+$fontsiz-artcsect-titulo-menu:1.6rem;
+
+header{
+    h1{
+        font-family: $fuente-principal;
+        font-weight: 400;
+    }
+    h2{
+        font-family: $fuente-principal;
+        font-weight: 300;
+    }
+}
+
+main{
+    font-family: $fuente-secundaria;
+}
+article{
+    h2{
+        font-family: $fuente-principal;
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-titulo-menu;
+
+    }
+    p{
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-secundario-menu;
+    }
+}
+section{
+    h3{
+        font-family: $fuente-principal;
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-titulo-menu;
+    }
+    p{
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-secundario-menu;
+    }
+    ul{
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-secundario-menu;
+    }
+    ol{
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-secundario-menu;
+    }
+    table{
+        font-weight: 400;
+        font-size: $fontsiz-artcsect-secundario-menu;
+    }
+}
+
+footer{
+    font-family: $fuente-principal;
+    font-weight: 300;
+    font-style: italic;
+}

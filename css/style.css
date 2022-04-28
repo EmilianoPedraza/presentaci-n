@@ -1,0 +1,166 @@
+/*fuentes*/
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1a1717; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header h1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em; }
+
+header a {
+  color: white;
+  border-style: solid;
+  border-color: #e7fd1c;
+  border-width: 1px;
+  background-color: #1a1717; }
+
+header h1 {
+  text-align: center; }
+  header h1 img {
+    border-radius: 50%; }
+  header h1 span {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #e7fd1c; }
+
+header h2 {
+  background-color: #fdfdfd;
+  border-radius: 1em; }
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+li {
+  list-style-type: none; }
+
+main {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "articulo articulo" "datos lisDes" "tabla lisOrd";
+  gap: 2em;
+  justify-items: center; }
+
+.sectionDatos {
+  width: 70%;
+  grid-area: datos; }
+
+.sectionListaDes {
+  width: 70%;
+  grid-area: lisDes; }
+
+.sectionListaOrd {
+  width: 70%;
+  grid-area: lisOrd; }
+
+.sectionTabla {
+  grid-area: tabla; }
+
+main article {
+  border-radius: 2em;
+  width: 90%;
+  grid-area: articulo;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fdfdfd; }
+
+main section {
+  border-radius: 1em;
+  background-color: #e7fd1c;
+  border-style: solid;
+  animation-name: salto;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s; }
+
+tr {
+  border-style: none; }
+
+th {
+  background-color: #fdfdfd;
+  border-style: none; }
+
+td {
+  border-style: none; }
+
+section table {
+  border-style: solid; }
+
+@keyframes salto {
+  65% {
+    transform: translateY(-0.7em);
+    box-shadow: 0 3rem 30px -40px #b8c475; } }
+
+footer {
+  background-color: #e7fd1c;
+  text-align: center; }
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+header h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+main {
+  font-family: "Source Sans Pro", sans-serif; }
+
+article h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+article p {
+  font-weight: 400;
+  font-size: 1.3rem; }
+
+section h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+section p {
+  font-weight: 400;
+  font-size: 1.3rem; }
+
+section ul {
+  font-weight: 400;
+  font-size: 1.3rem; }
+
+section ol {
+  font-weight: 400;
+  font-size: 1.3rem; }
+
+section table {
+  font-weight: 400;
+  font-size: 1.3rem; }
+
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic; }

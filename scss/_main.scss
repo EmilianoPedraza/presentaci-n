@@ -1,0 +1,79 @@
+
+$shadow-color: #b8c475;
+
+li{
+    list-style-type: none;
+}
+main{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "articulo articulo"
+    "datos lisDes"
+    "tabla lisOrd"
+    ;
+    gap: 2em;
+    justify-items: center;
+}
+.sectionDatos{
+    width: 70%;
+    grid-area: datos;
+}
+.sectionListaDes{
+    width: 70%;
+    grid-area: lisDes;
+}
+.sectionListaOrd{
+    width: 70%;
+    grid-area: lisOrd;
+}
+.sectionTabla{
+    grid-area: tabla;
+}
+main{
+    article{
+        border-radius: 2em;
+        width: 90%;
+        grid-area: articulo;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $color-bg-tittles;
+    }
+    section{
+        border-radius: 1em;
+        background-color: $color-paleta-yellow;
+        border-style: solid;
+        animation-name: salto;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+    }
+}
+tr{
+    border-style: none;
+    
+}
+th{
+    background-color: $color-bg-tittles;
+    border-style: none;
+}
+td{
+    border-style: none;
+}
+section{
+    table{
+        border-style: solid;
+    }
+}
+@keyframes salto {
+    65%{
+        transform: translateY(-0.7em);
+        box-shadow: 0 3rem 30px -40px $shadow-color;
+    }
+}

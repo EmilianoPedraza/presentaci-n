@@ -1,0 +1,25 @@
+$color-body: #1a1717;
+$color-text-titulos: black;
+$color-bg-tittles: #fdfdfd;
+$color-paleta-yellow: #e7fd1c;
+/*fuentes*/
+$fuente-principal: 'Roboto', sans-serif; ;
+$fuente-secundaria: 'Source Sans Pro', sans-serif;;
+a{
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color-body;
+
+}
+@import "header";
+@import "main";
+@import "footer";
+@import "fuentes-de-texto"
